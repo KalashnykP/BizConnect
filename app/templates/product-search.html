@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    Search Results:
+    <a href="/product-search">Search</a>
+
+        <table>
+            {% for product in product_table %}
+                <tr>
+                    <td><em>{{ product['product_name']}}</em> {{product['style']}} {{product['price']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+    </ul>
+
+{% endblock %}

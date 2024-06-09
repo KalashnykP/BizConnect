@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Delete Book:</h1>
+    <form action="/product-remove" method="POST">
+        <label for="product">Select Product to Remove:</label>
+            <select name="product_id_to_delete" id="product">
+                {% for product in products %}
+                    <option value={{product["product_id"]}}>{{product["name"]}}</option>
+                {% endfor %}
+            </select>
+        <input type="submit" value="Delete product">
+    </form>
+    <br>
+    <br>
+
+
+{% endblock %}

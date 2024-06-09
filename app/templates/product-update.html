@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>product Modify:</h1>
+    <form action="/product-update" method="POST">
+        <h2>product Update Form:</h2>
+        <input autocomplete="off" autofocus name="product_name" placeholder="Product Name" type="text">
+        <input autocomplete="off" autofocus name="seller_name" placeholder="Seller Name" type="text">
+        <input autocomplete="off" autofocus name="style" placeholder="Style" type="text">
+        <input autocomplete="off" autofocus name="price" placeholder="Price" type="text">
+        <input autocomplete="off" autofocus name="qty" placeholder="Quantity" type="text">
+        <br>
+        <label for="product">product to Modify:</label>
+            <select name="product_reference_product" id="product">
+                {% for product in products %}
+                    <option value={{product["product_id"]}}>{{product["name"]}}</option>
+                {% endfor %}
+            </select>
+        <br>
+        <input type="submit" value="Update this product">
+    </form>
+        
+    </ul>
+{% endblock %}

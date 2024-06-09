@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>New Book:</h1>
+    <form action="/add-product" method="POST">
+        <input autocomplete="off" autofocus name="product_name" placeholder="Product Name" type="text">
+        <input autocomplete="off" autofocus name="seller_name" placeholder="Seller Name" type="text">
+        <input autocomplete="off" autofocus name="style" placeholder="Style" type="text">
+        <input autocomplete="off" autofocus name="price" placeholder="Price" type="text">
+        <input autocomplete="off" autofocus name="qty" placeholder="Quantity" type="text">
+        <input type="submit" value="Add Product">
+    </form>
+
+{% endblock %}

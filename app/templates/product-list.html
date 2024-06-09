@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    All Products:
+    <a href="/product-list">List of Products</a>
+    <form action="/product-list" method="GET">
+        <table>
+            {% for product in product_table %}
+                <tr>
+                    <td><em>{{ product['product_name']}}</em> {{product['style']}} {{product['price']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </form>
+
+    </ul>
+
+{% endblock %}
