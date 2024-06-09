@@ -1,0 +1,105 @@
+/* Cards */
+
+
+.supplier-example {
+    height: 100px;
+    display: flex;
+    background-color: #a88059;
+
+}
+
+
+.card {
+    margin-left: 50px;
+    position: absolute;
+    margin-top: 50px;
+
+}
+
+.inner-main {
+
+    width: 500px;
+    text-align: center;
+    margin-left: 400px;
+    height: 300px;
+    padding: 20px;
+}
+
+.supplier-text,
+.inner-main,
+main {
+    text-align: center;
+
+}
+
+main {
+    background-image: url(Photos/pexels-surene-palvie-1075224-2767689.jpg);
+    margin-bottom: 100px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+    padding: 10px;
+
+}
+
+#form1 {
+    margin-bottom: 10px;
+
+}
+
+.Testimonials {
+    margin-top: 500px;
+    position: absolute;
+    background-color: red;
+    text-align: center;
+
+}
+
+.testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
+
+nav {
+    height: 120px;
+    background-color: #bd9772;
+
+}
+
+.btn-primary {
+    background-color: #a88059 !important;
+    border: #a88059 !important;
+}
+
+.btn-primary:hover {
+    background-color: #e8c5a2 !important;
+}
+
+.nav-link {
+    color: #e8cdb2 !important;
+    font-size: 30px;
+}
+
+.nav-link:hover {
+    color: #f6e7d8 !important;
+}
+
+.nav-button {
+    color: white !important;
+}
+
+.nav-2 {
+    margin-left: 100px;
+}
+
+i {
+    font-size: 25px;
+}
